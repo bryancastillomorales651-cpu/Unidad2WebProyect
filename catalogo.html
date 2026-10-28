@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo | Brinca y Ríe</title>
+
+  
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+  
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark bg-azul">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"><i class="fa-solid fa-star"></i> Brinca y Ríe</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-expanded="false" aria-label="Abrir menú">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="catalogo.html" aria-current="page">Catálogo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="paquetes.html">Paquetes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="galeria.html">Galería</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <div class="container">
+        <h1>Nuestros brincolines</h1>
+        <p>Los precios son por 5 horas de renta e incluyen entrega e instalación.</p>
+
+        <div class="d-flex flex-wrap justify-content-center gap-2 mb-4">
+          <button class="btn btn-contorno btn-filtro active" type="button" data-filtro="todos">Todos</button>
+          <button class="btn btn-contorno btn-filtro" type="button" data-filtro="pequeno">Pequeños</button>
+          <button class="btn btn-contorno btn-filtro" type="button" data-filtro="mediano">Medianos</button>
+          <button class="btn btn-contorno btn-filtro" type="button" data-filtro="grande">Grandes</button>
+        </div>
+
+        <div class="row g-4">
+        <div class="col-12 col-sm-6 col-lg-4 producto" data-tipo="pequeno" data-aos="fade-up">
+          <article class="card h-100">
+            <img class="card-img-top" src="img/castillo-clasico.svg" alt="Brincolín Castillo Clásico">
+            <div class="card-body">
+              <h3 class="h5">Castillo Clásico</h3>
+              <p class="mb-1">Medidas: 3 x 3 m</p>
+              <p>Hasta 6 niños</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <p class="precio">$600</p>
+                <div class="d-flex align-items-center gap-2">
+                  <button class="btn-favorito" type="button" data-nombre="Castillo Clásico" aria-label="Marcar Castillo Clásico como favorito"><i class="fa-solid fa-heart"></i></button>
+                  <a class="btn btn-coral btn-sm" href="contacto.html">Cotizar</a>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4 producto" data-tipo="pequeno" data-aos="fade-up">
+          <article class="card h-100">
+            <img class="card-img-top" src="img/saltarin-mini.svg" alt="Brincolín Saltarín Mini">
+            <div class="card-body">
+              <h3 class="h5">Saltarín Mini</h3>
+              <p class="mb-1">Medidas: 2.5 x 2.5 m</p>
+              <p>Hasta 4 niños</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <p class="precio">$500</p>
+                <div class="d-flex align-items-center gap-2">
+                  <button class="btn-favorito" type="button" data-nombre="Saltarín Mini" aria-label="Marcar Saltarín Mini como favorito"><i class="fa-solid fa-heart"></i></button>
+                  <a class="btn btn-coral btn-sm" href="contacto.html">Cotizar</a>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4 producto" data-tipo="mediano" data-aos="fade-up">
+          <article class="card h-100">
+            <img class="card-img-top" src="img/castillo-mediano.svg" alt="Brincolín Castillo Mediano">
+            <div class="card-body">
+              <h3 class="h5">Castillo Mediano</h3>
+              <p class="mb-1">Medidas: 4 x 4 m</p>
+              <p>Hasta 10 niños</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <p class="precio">$900</p>
+                <div class="d-flex align-items-center gap-2">
+                  <button class="btn-favorito" type="button" data-nombre="Castillo Mediano" aria-label="Marcar Castillo Mediano como favorito"><i class="fa-solid fa-heart"></i></button>
+                  <a class="btn btn-coral btn-sm" href="contacto.html">Cotizar</a>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4 producto" data-tipo="mediano" data-aos="fade-up">
+          <article class="card h-100">
+            <img class="card-img-top" src="img/selva-aventura.svg" alt="Brincolín Selva Aventura">
+            <div class="card-body">
+              <h3 class="h5">Selva Aventura</h3>
+              <p class="mb-1">Medidas: 4 x 5 m</p>
+              <p>Hasta 12 niños</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <p class="precio">$1,100</p>
+                <div class="d-flex align-items-center gap-2">
+                  <button class="btn-favorito" type="button" data-nombre="Selva Aventura" aria-label="Marcar Selva Aventura como favorito"><i class="fa-solid fa-heart"></i></button>
+                  <a class="btn btn-coral btn-sm" href="contacto.html">Cotizar</a>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4 producto" data-tipo="grande" data-aos="fade-up">
+          <article class="card h-100">
+            <img class="card-img-top" src="img/mega-resbaladilla.svg" alt="Brincolín Mega Resbaladilla">
+            <div class="card-body">
+              <h3 class="h5">Mega Resbaladilla</h3>
+              <p class="mb-1">Medidas: 5 x 7 m</p>
+              <p>Hasta 18 niños</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <p class="precio">$1,600</p>
+                <div class="d-flex align-items-center gap-2">
+                  <button class="btn-favorito" type="button" data-nombre="Mega Resbaladilla" aria-label="Marcar Mega Resbaladilla como favorito"><i class="fa-solid fa-heart"></i></button>
+                  <a class="btn btn-coral btn-sm" href="contacto.html">Cotizar</a>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4 producto" data-tipo="grande" data-aos="fade-up">
+          <article class="card h-100">
+            <img class="card-img-top" src="img/parque-acuatico.svg" alt="Brincolín Parque Acuático">
+            <div class="card-body">
+              <h3 class="h5">Parque Acuático</h3>
+              <p class="mb-1">Medidas: 5 x 8 m</p>
+              <p>Hasta 20 niños</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <p class="precio">$1,900</p>
+                <div class="d-flex align-items-center gap-2">
+                  <button class="btn-favorito" type="button" data-nombre="Parque Acuático" aria-label="Marcar Parque Acuático como favorito"><i class="fa-solid fa-heart"></i></button>
+                  <a class="btn btn-coral btn-sm" href="contacto.html">Cotizar</a>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-blanco">
+      <div class="container">
+        <h2>Antes de elegir</h2>
+        <p>Mide el espacio donde irá el brincolín y deja un metro libre alrededor. Necesitamos una toma de corriente cerca y piso plano.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container d-flex flex-wrap justify-content-between align-items-center gap-2">
+      <p class="mb-0">&copy; 2026 Brinca y Ríe - Renta de brincolines</p>
+      <p class="mb-0"><i class="fa-brands fa-whatsapp"></i> WhatsApp: <a href="contacto.html">000 000 0000</a></p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS, SweetAlert2 y AOS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
