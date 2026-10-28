@@ -2,37 +2,138 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Inicio | Brinca y Ríe</title>
-  <link rel="stylesheet" href="css/style.css">
-  <script src="js/main.js"></script>
+
+  
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+  
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-    <div class="contenedor">
-      <a class="logo" href="index.html">Brinca y Ríe</a>
-      <nav>
-      <a href="index.html" class="activo">Inicio</a>
-      <a href="catalogo.html">Catálogo</a>
-      <a href="paquetes.html">Paquetes</a>
-      <a href="galeria.html">Galería</a>
-      <a href="contacto.html">Contacto</a>
-      </nav>
-    </div>
 
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark bg-azul">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"><i class="fa-solid fa-star"></i> Brinca y Ríe</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-expanded="false" aria-label="Abrir menú">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html" aria-current="page">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="catalogo.html">Catálogo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="paquetes.html">Paquetes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="galeria.html">Galería</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   </header>
 
-  <section class="portada">
-    <div class="contenedor">
-      <div class="texto">
-        <h1>La fiesta ya tiene dónde saltar</h1>
-        <p>Rentamos brincolines limpios y seguros. Los llevamos, los instalamos y los recogemos.</p>
-        <a class="boton" href="contacto.html">Cotizar mi fiesta</a>
+  <main>
+    <section>
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-12 col-md-6">
+            <h1 class="display-5">La fiesta ya tiene dónde saltar</h1>
+            <p class="lead">Rentamos brincolines limpios y seguros. Los llevamos, los instalamos y los recogemos.</p>
+            <div class="d-flex flex-wrap gap-2">
+              <a class="btn btn-coral btn-lg" href="contacto.html">Cotizar mi fiesta</a>
+              <a class="btn btn-contorno btn-lg" href="catalogo.html">Ver brincolines</a>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <img class="img-fluid" src="img/castillo-clasico.svg" alt="Brincolín en forma de castillo de colores">
+          </div>
+        </div>
       </div>
-      <div class="dibujo">🏰</div>
-    </div>
-  </section>
+    </section>
 
+    <section class="bg-blanco">
+      <div class="container">
+        <h2 class="mb-4">Rentar es fácil</h2>
+        <div class="row g-4">
+          <article class="col-12 col-md-4" data-aos="fade-up">
+            <div class="card h-100 p-3">
+              <h3 class="h5"><i class="fa-solid fa-hand-pointer icono"></i> 1. Elige</h3>
+              <p class="mb-0">Escoge un brincolín o paquete según la edad y el número de invitados.</p>
+            </div>
+          </article>
+          <article class="col-12 col-md-4" data-aos="fade-up">
+            <div class="card h-100 p-3">
+              <h3 class="h5"><i class="fa-solid fa-calendar-check icono"></i> 2. Aparta tu fecha</h3>
+              <p class="mb-0">Llena el formulario de contacto y confirmamos la disponibilidad.</p>
+            </div>
+          </article>
+          <article class="col-12 col-md-4" data-aos="fade-up">
+            <div class="card h-100 p-3">
+              <h3 class="h5"><i class="fa-solid fa-truck icono"></i> 3. Nosotros instalamos</h3>
+              <p class="mb-0">Llevamos el brincolín, lo instalamos y lo recogemos al terminar.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2 class="mb-4">Por qué rentar con nosotros</h2>
+        <div class="row g-4">
+          <article class="col-12 col-sm-6 col-lg-4" data-aos="fade-up">
+            <h3 class="h5"><i class="fa-solid fa-pump-soap icono"></i> Desinfectados</h3>
+            <p>Limpiamos cada brincolín antes de cada entrega.</p>
+          </article>
+          <article class="col-12 col-sm-6 col-lg-4" data-aos="fade-up">
+            <h3 class="h5"><i class="fa-solid fa-shield-halved icono"></i> Seguros</h3>
+            <p>Todos quedan bien sujetos al piso y revisados.</p>
+          </article>
+          <article class="col-12 col-sm-6 col-lg-4" data-aos="fade-up">
+            <h3 class="h5"><i class="fa-solid fa-van-shuttle icono"></i> Entrega incluida</h3>
+            <p>La instalación y recolección no tienen costo extra.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-amarillo text-center">
+      <div class="container">
+        <h2>¿Ya tienes fecha?</h2>
+        <p>Los fines de semana se llenan rápido, aparta con tiempo.</p>
+        <a class="btn btn-azul btn-lg" href="contacto.html">Apartar fecha</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container d-flex flex-wrap justify-content-between align-items-center gap-2">
+      <p class="mb-0">&copy; 2026 Brinca y Ríe - Renta de brincolines</p>
+      <p class="mb-0"><i class="fa-brands fa-whatsapp"></i> WhatsApp: <a href="contacto.html">000 000 0000</a></p>
+    </div>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
