@@ -72,7 +72,7 @@ if (formulario) {
 
   
   formulario.addEventListener("submit", function (e) {
-    e.preventDefault(); // evita que la página se recargue
+    e.preventDefault(); 
 
     campos.forEach(revisar);
 
