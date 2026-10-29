@@ -46,4 +46,111 @@
       </div>
     </nav>
   </header>
+
+  <main>
+    <section>
+      <div class="container">
+        <div class="row g-4">
+          <article class="col-12 col-lg-8">
+            <h1>Aparta tu fecha</h1>
+            <form id="formulario" novalidate>
+              <div class="row g-3">
+                <div class="col-12 col-md-6">
+                  <label class="form-label" for="nombre">Nombre</label>
+                  <input class="form-control" type="text" id="nombre" required minlength="3">
+                  <div class="invalid-feedback">Escribe tu nombre (mínimo 3 letras).</div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <label class="form-label" for="correo">Correo</label>
+                  <input class="form-control" type="email" id="correo" required>
+                  <div class="invalid-feedback">Escribe un correo válido.</div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <label class="form-label" for="telefono">Teléfono (10 números)</label>
+                  <input class="form-control" type="tel" id="telefono" required pattern="[0-9]{10}">
+                  <div class="invalid-feedback">Escribe 10 números, sin espacios.</div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <label class="form-label" for="fecha">Fecha de la fiesta</label>
+                  <input class="form-control" type="date" id="fecha" required>
+                  <div class="invalid-feedback">Elige una fecha de hoy en adelante.</div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <label class="form-label" for="invitados">Número de invitados</label>
+                  <input class="form-control" type="number" id="invitados" required min="1" max="60">
+                  <div class="invalid-feedback">Escribe un número entre 1 y 60.</div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <label class="form-label" for="brincolin">Brincolín o paquete</label>
+                  <select class="form-select" id="brincolin" required>
+                    <option value="">Elige una opción</option>
+              <option>Castillo Clásico</option>
+              <option>Saltarín Mini</option>
+              <option>Castillo Mediano</option>
+              <option>Selva Aventura</option>
+              <option>Mega Resbaladilla</option>
+              <option>Parque Acuático</option>
+              <option>Paquete Básico</option>
+              <option>Paquete Fiesta</option>
+              <option>Paquete Mega</option>
+                  </select>
+                  <div class="invalid-feedback">Elige una opción.</div>
+                </div>
+                <div class="col-12">
+                  <p class="form-label mb-1">Extras (opcional)</p>
+                  <div class="d-flex flex-wrap gap-3">
+                    <div class="form-check">
+                      <input class="form-check-input extra" type="checkbox" id="extra1" value="Mesas y sillas">
+                      <label class="form-check-label" for="extra1">Mesas y sillas</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input extra" type="checkbox" id="extra2" value="Carpa">
+                      <label class="form-check-label" for="extra2">Carpa</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input extra" type="checkbox" id="extra3" value="Planta de luz">
+                      <label class="form-check-label" for="extra3">Planta de luz</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <label class="form-label" for="mensaje">Mensaje</label>
+                  <textarea class="form-control" id="mensaje" rows="4" required minlength="10" placeholder="Dirección y hora de la fiesta"></textarea>
+                  <div class="invalid-feedback">Escribe al menos 10 caracteres.</div>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-coral btn-lg" type="submit">Enviar solicitud</button>
+                </div>
+              </div>
+            </form>
+            <p id="resultado" class="bg-amarillo p-3 rounded fw-bold mt-4 d-none"></p>
+          </article>
+
+          <aside class="col-12 col-lg-4">
+            <div class="bg-amarillo p-4 rounded">
+              <h2 class="h4">Datos de contacto</h2>
+              <p><i class="fa-brands fa-whatsapp"></i> <strong>WhatsApp:</strong> 000 000 0000</p>
+              <p><i class="fa-solid fa-clock"></i> <strong>Horario:</strong> todos los días de 9:00 a 20:00</p>
+              <p class="mb-0"><i class="fa-solid fa-location-dot"></i> <strong>Cobertura:</strong> escríbenos tu colonia y te confirmamos si llegamos.</p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container d-flex flex-wrap justify-content-between align-items-center gap-2">
+      <p class="mb-0">&copy; 2026 Brinca y Ríe - Renta de brincolines</p>
+      <p class="mb-0"><i class="fa-brands fa-whatsapp"></i> WhatsApp: <a href="contacto.html">000 000 0000</a></p>
+    </div>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/main.js"></script>
+
+
 </html>
