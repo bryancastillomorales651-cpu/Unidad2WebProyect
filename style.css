@@ -1,0 +1,142 @@
+/* Colores: azul #1B2A6B, amarillo #FFC83D, coral #D63C4A, claro #F4F7FF */
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background-color: #F4F7FF;
+  color: #1B2A6B;
+}
+
+h1, h2, h3, h4, h5, .navbar-brand {
+  font-family: 'Fredoka', sans-serif;
+  color: #1B2A6B;
+}
+
+a {
+  color: #1B2A6B;
+}
+
+section {
+  padding: 3rem 0;
+}
+
+/* Fondos */
+.bg-azul {
+  background-color: #1B2A6B;
+}
+
+.bg-amarillo {
+  background-color: #FFC83D;
+}
+
+.bg-blanco {
+  background-color: white;
+}
+
+/* Menú */
+.navbar-brand {
+  color: #FFC83D !important;
+}
+
+.navbar .nav-link {
+  color: white;
+}
+
+.navbar .nav-link.active {
+  background-color: #FFC83D;
+  color: #1B2A6B;
+  border-radius: 20px;
+}
+
+/* Botones */
+.btn-coral {
+  background-color: #D63C4A;
+  color: white;
+}
+
+.btn-azul {
+  background-color: #1B2A6B;
+  color: white;
+}
+
+.btn-amarillo {
+  background-color: #FFC83D;
+  color: #1B2A6B;
+}
+
+.btn-contorno {
+  border: 2px solid #1B2A6B;
+  color: #1B2A6B;
+  background-color: white;
+}
+
+.btn-contorno.active {
+  background-color: #1B2A6B;
+  color: white;
+}
+
+/* Tarjetas */
+.card {
+  border: 2px solid #1B2A6B;
+  border-radius: 15px;
+}
+
+.precio {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 1.5rem;
+  color: #D63C4A;
+  margin: 0;
+}
+
+.icono {
+  color: #D63C4A;
+}
+
+.paquete-destacado {
+  background-color: #1B2A6B;
+  color: white;
+}
+
+.paquete-destacado h2,
+.paquete-destacado .precio {
+  color: #FFC83D;
+}
+
+/* Botón de favorito */
+.btn-favorito {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #1B2A6B;
+  opacity: 0.4;
+}
+
+.btn-favorito.activo {
+  color: #D63C4A;
+  opacity: 1;
+}
+
+/* Tabla y formulario */
+th {
+  background-color: #1B2A6B !important;
+  color: white !important;
+}
+
+.form-label {
+  font-weight: bold;
+}
+
+.invalid-feedback {
+  color: #B92F3C;
+  font-weight: bold;
+}
+
+/* Pie de página */
+footer {
+  background-color: #1B2A6B;
+  color: white;
+  padding: 1.5rem 0;
+}
+
+footer a {
+  color: #FFC83D;
+}
